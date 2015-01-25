@@ -13,22 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
 function watchPosition( position ){ 
     var curLatitude=position.coords.latitude;
     var curLongitude=position.coords.longitude;
-  console.log( position.coords.latitude );
-  console.log( position.coords.longitude );
-  console.log( position.coords.accuracy );
-  console.log( position.coords.altitude );
+//  console.log( position.coords.latitude );
+//  console.log( position.coords.longitude );
+//  console.log( position.coords.accuracy );
+//  console.log( position.coords.altitude );
    var canvas = document.createElement("canvas"); 
     canvas.id="mapCanvas";
     canvas.setAttribute("width", 400);
     canvas.setAttribute("height", 400);
     document.body.appendChild(canvas);
-        
-    console.log(canvas);
     var context = canvas.getContext("2d");
     var imageObj = new Image();
 //
     imageObj.onload = function() {
-        console.log("now image loaded");
+       // console.log("now image loaded");
         context.drawImage(imageObj, 0, 0, 400, 400);
         //var dataURL=canvas.toDataURL();
         //document.querySelector("#hiddenposter").innerHTML=dataURL;
